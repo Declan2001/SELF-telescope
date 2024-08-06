@@ -34,6 +34,11 @@
 3) All the features of the code that need to be changed are at the top: radius, step_size, deg, deg_step would be the only parameters I would change
 4) The other feature that can be changed is the "OUTPUT file$" which can be toggled on and off by making it a comment or not. This just says if it should be printed to the screen or to the file.
 
+### Miscellaneous 
+1) If image plane not at correct location
+- first make sure there is no tip/decenter on ellipse (M2) so double click on "standard" for surface 6 in the lens diagram, go to "Tilt/Decenter" tab and make sure before AND after are all set to zero
+- return to the original lens table and change the thickness of ellipse to "1292" then go to the "Optimize" tab and click "Quick Focus" this should then focus the image plane. For me it gets it to 1e-7 clear semi diameter for the image plane
+
 ### ZEMAX CODE ISSUE! 
 - When the tip is performed it is changing the z location of the image plane by a slight amount
 - This is bad for when we need to add images together
