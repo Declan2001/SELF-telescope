@@ -1,6 +1,10 @@
 # SELF-telescope
 
 ## Zemax
+-ZPL: Zemax Macros
+-ZOS: Zemax lens data
+-ZDA and CFG: I do not fully know, but added them here for completetion, but I have never needed them. The ZDA file seems to act very similarly to the ZOS file
+-ZIP: folder contains all the data I am using in the python program
 
 ### Open Zemax:
 1) Open ANSYS License Management Center
