@@ -45,9 +45,18 @@
 - Since M2 has no piston features (in the SELF Telescope itself) it cannot be decentered in the z to fix for this issue
 
 ### Python File: "spot_diagram.py"
-1) This python file will create a globally located spot diagram. Unlike Zemax spot diagram it will not put (0,0) of the image plane at the center of the ray bundle, instead it uses the global (0,0) of the image plane
-2) It will also compute the Airy Disk (black ring) based off of the Effective Focal Length given by Zemax for each orientation of M2 (elliptical mirror)
-3) It will compute the center of the spot diagram with a red dot
+1) The code takes in the output from the Zemax ZPL file. There is a different file for each tip angle. It works in blocks of information. For example a block is:
+
+Local Ap -250.0000000000 0.0000000000 0.0000000000
+Local El 9.8299302380 -58.9795978291 18.8866102460
+Local Img -0.0038810375 0.0885535298 0.0000000000
+OPL 4742.6594111599
+
+with two additional lines at the beginning of each file stating the tip/tilt/decenter and the effective focal length at that configuration
+2) This python file will create a globally located spot diagram. Unlike Zemax spot diagram it will not put (0,0) of the image plane at the center of the ray bundle, instead it uses the global (0,0) of the image plane
+3) It will also compute the Airy Disk (black ring) based off of the Effective Focal Length given by Zemax for each orientation of M2 (elliptical mirror)
+4) It will compute the center of the spot diagram with a red dot
 
 
 ## Fiber Experiment
+
