@@ -1,5 +1,7 @@
 # SELF-telescope
 
+## Zemax
+
 ### Open Zemax:
 1) Open ANSYS License Management Center
 - App on the computer so use windows key and search
@@ -31,3 +33,16 @@
 2) The purpose of the code is to perform multiple raytraces over vary parameters. For example, the tip angle of the subaperture of M2 can be changed.
 3) All the features of the code that need to be changed are at the top: radius, step_size, deg, deg_step would be the only parameters I would change
 4) The other feature that can be changed is the "OUTPUT file$" which can be toggled on and off by making it a comment or not. This just says if it should be printed to the screen or to the file.
+
+### ZEMAX CODE ISSUE! 
+- When the tip is performed it is changing the z location of the image plane by a slight amount
+- This is bad for when we need to add images together
+- Since M2 has no piston features (in the SELF Telescope itself) it cannot be decentered in the z to fix for this issue
+
+### Python File: "spot_diagram.py"
+1) This python file will create a globally located spot diagram. Unlike Zemax spot diagram it will not put (0,0) of the image plane at the center of the ray bundle, instead it uses the global (0,0) of the image plane
+2) It will also compute the Airy Disk (black ring) based off of the Effective Focal Length given by Zemax for each orientation of M2 (elliptical mirror)
+3) It will compute the center of the spot diagram with a red dot
+
+
+## Fiber Experiment
