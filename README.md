@@ -61,6 +61,9 @@ with two additional lines at the beginning of each file stating the tip/tilt/dec
 3) It will also compute the Airy Disk (black ring) based off of the Effective Focal Length given by Zemax for each orientation of M2 (elliptical mirror)
 4) It will compute the center of the spot diagram with a red dot
 
+If you want to plot the aperture graph add the extra flag in plotting_rays function
+- easily can be done for ellipse too if you follow same code format of aperture code (not done yet, but could be easiy done)
+
 
 ## Fiber Experiment
 
