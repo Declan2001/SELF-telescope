@@ -1,5 +1,8 @@
 # SELF-telescope
 
+### PDF:
+This has a lot of the math I used to figure out how to move ellipse for tipping. It also has some ideas of how to do the clocking. Lastly it has some Fiber experiment data (not that useful).
+
 ## Zemax
 - ZPL: Zemax Macros
 - ZOS: Zemax lens data
@@ -51,10 +54,10 @@
 ### Python File: "spot_diagram.py"
 1) The code takes in the output from the Zemax ZPL file. There is a different file for each tip angle. It works in blocks of information. For example a block is:
 
-Local Ap -250.0000000000 0.0000000000 0.0000000000
-Local El 9.8299302380 -58.9795978291 18.8866102460
-Local Img -0.0038810375 0.0885535298 0.0000000000
-OPL 4742.6594111599
+- Local Ap -250.0000000000 0.0000000000 0.0000000000
+- Local El 9.8299302380 -58.9795978291 18.8866102460
+- Local Img -0.0038810375 0.0885535298 0.0000000000
+- OPL 4742.6594111599
 
 with two additional lines at the beginning of each file stating the tip/tilt/decenter and the effective focal length at that configuration
 2) This python file will create a globally located spot diagram. Unlike Zemax spot diagram it will not put (0,0) of the image plane at the center of the ray bundle, instead it uses the global (0,0) of the image plane
@@ -64,6 +67,11 @@ with two additional lines at the beginning of each file stating the tip/tilt/dec
 If you want to plot the aperture graph add the extra flag in plotting_rays function
 - easily can be done for ellipse too if you follow same code format of aperture code (not done yet, but could be easiy done)
 
+### Install and Run for Python:
+- Need an interface to code under. I enjoy using VSCode, best to use especially if you are planning on getting into python. Can code from the command line with "nano" or "vim" if you are born in the 1800's. Another good interface is PyCharm. You can easily download any of these from the internet.
+- Install matplotlib and numpy (might need to install pip to do this)
+- "pip install numpy" and "pip install matplotlib" in the command line will accomplish this 
+- ALSO, Need to change the base path of the folder to whereever you put the "SELF_RAYTRACE_DATA" folder. It is currently using my personal one.
 
 ## Fiber Experiment
 ### Data location:
