@@ -66,4 +66,25 @@ If you want to plot the aperture graph add the extra flag in plotting_rays funct
 
 
 ## Fiber Experiment
+### Data location:
+https://drive.google.com/drive/folders/1X3GkPLBTcU9meeKVs4_gVvm9rrM2DzEU?usp=drive_link 
+- if cannot access please email: declanbaker01@gmail.com and be descriptive :)
+
+### Useful Paper:
+- Link to paper on the concept (they used a different method) (SLM cost 20K+):
+
+### IDEA:
+The idea of this experiment was to see if collimated light through a fiber optic wire could be recontructed to figure out where the point source came from. 
+
+### SETUP:
+In order to do this I fixed the wire and put one end to receive a laser and the other end to a microscope. The end with a microscope had a camera on it thus allowing us to document what the speckle pattern looked like. 
+
+### PROCESS:
+On two separate days 7/5 and 7/10 I took full length range of dataset from where the spot was all the way on the left to all the way on the right, only moving one axis. After on 7/10 I took another set of data at random points, referred to as mystery pictures or "m" in the documentation. There known values were recorded by hand and are in the name of each picture just like the rest of the pictures. When running the code. After this I created a code that took the two separate full datasets and compared them to the mystery pictures to see if the least squares model aligned to the same location on both. Look at the graphs provided
+
+### RESULT:
+The PSM seemed not to align in any helpful manner, but the AMSCOPE camera pictures of the speckle patterns seem promising. They are close.
+!!!!!!!!!!!!!VERY IMPORTANT CAVEAT!!!!!!!!!!!!: 7/5 to 7/10 the setup of the fiber shifted slightly due to vibrations and life I guess. But the important part is that the middle of the speckle part was not at the same location on the z axis for both days. Thus when comparing the mystery pictures (taken on 7/10) to 7/5 there is a correction factor added. This was done with my eye, so is very susceptible to human error. However, when compared to 7/10 dataset there is no correction factor. This could be the reason why the data for 7/10 matches closer to the mystery pictures than 7/5 dataset does.
+
+### GRAPHS: 
 
