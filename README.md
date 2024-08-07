@@ -90,8 +90,11 @@ On two separate days 7/5 and 7/10 I took full length range of dataset from where
 The PSM seemed not to align in any helpful manner, but the AMSCOPE camera pictures of the speckle patterns seem promising. They are close.
 !!!!!!!!!!!!!VERY IMPORTANT CAVEAT!!!!!!!!!!!!: 7/5 to 7/10 the setup of the fiber shifted slightly due to vibrations and life I guess. But the important part is that the middle of the speckle part was not at the same location on the z axis for both days. Thus when comparing the mystery pictures (taken on 7/10) to 7/5 there is a correction factor added. This was done with my eye, so is very susceptible to human error. However, when compared to 7/10 dataset there is no correction factor. This could be the reason why the data for 7/10 matches closer to the mystery pictures than 7/5 dataset does.
 
+I firmly believe that if a better more stable setup is used then there would be consistent recreation of speckle patterns over time.
+
 ### GRAPHS: 
 Blue vertical line is the correct mystery image corrected number determined by me measuring when I took the data originally then subtracted off by the correction. (7/5 has correction; 7/10 has no correction) 
 Red dot is the calculated "best match" decided by the code, lowest least squares value
-
 This means that the code got the correct answer if the blue line aligns with the red dot
+
+Ex: amscope-7-5-24 means it is the amscope camera taking pictures of the speckle pattern. Data set 7/5/24 is being used. Plot 1 through 5 is the 5 mystery pictures being used. So "Plot 1: 34" means mystery picture 31 is being used but as you can see the blue line is over 34 due to the correction factor. Therefore, we can see that the the code was close to getting the correct answer but was off by 0.5. 
