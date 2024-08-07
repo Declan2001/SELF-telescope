@@ -71,7 +71,11 @@ https://drive.google.com/drive/folders/1X3GkPLBTcU9meeKVs4_gVvm9rrM2DzEU?usp=dri
 - if cannot access please email: declanbaker01@gmail.com and be descriptive :)
 
 ### Useful Paper:
-- Link to paper on the concept (they used a different method) (SLM cost 20K+):
+Transmission of natural scene images through a multimode fibre
+Piergiorgio Caramazza, Oisín Moran, Roderick Murray-Smith & Daniele Faccio 
+- Link to paper on the concept: https://www.nature.com/articles/s41467-019-10057-8
+- (they used a different method to transmit images) (SLM cost 20K+)
+- in order to create an effective inverse transmission matrix then it needs to have a lot of data. Hard to do my hand
 
 ### IDEA:
 The idea of this experiment was to see if collimated light through a fiber optic wire could be recontructed to figure out where the point source came from. 
