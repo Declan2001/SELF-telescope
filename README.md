@@ -91,4 +91,7 @@ The PSM seemed not to align in any helpful manner, but the AMSCOPE camera pictur
 !!!!!!!!!!!!!VERY IMPORTANT CAVEAT!!!!!!!!!!!!: 7/5 to 7/10 the setup of the fiber shifted slightly due to vibrations and life I guess. But the important part is that the middle of the speckle part was not at the same location on the z axis for both days. Thus when comparing the mystery pictures (taken on 7/10) to 7/5 there is a correction factor added. This was done with my eye, so is very susceptible to human error. However, when compared to 7/10 dataset there is no correction factor. This could be the reason why the data for 7/10 matches closer to the mystery pictures than 7/5 dataset does.
 
 ### GRAPHS: 
+Blue vertical line is the correct mystery image corrected number determined by me measuring when I took the data originally then subtracted off by the correction. (7/5 has correction; 7/10 has no correction) 
+Red dot is the calculated "best match" decided by the code, lowest least squares value
 
+This means that the code got the correct answer if the blue line aligns with the red dot
